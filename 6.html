@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan CSS Selectors</title>
+  <style>
+    /* * → all elements */
+    * {
+      font-family: Arial;
+    }
+
+    /* div → semua tag <div> */
+    div {
+      background-color: lightblue;
+      margin: 10px;
+      padding: 5px;
+    }
+
+    /* div, p → semua div DAN semua paragraf */
+    div, p {
+      border: 1px solid gray;
+    }
+
+    /* div p → paragraf DI DALAM div */
+    div p {
+      color: red;
+    }
+
+    /* div > p → hanya paragraf satu tingkat di dalam div */
+    div > p {
+      font-weight: bold;
+    }
+
+    /* div + p → paragraf yang tepat setelah div */
+    div + p {
+      background-color: yellow;
+    }
+
+    /* div ~ p → semua paragraf setelah div (bukan hanya yang pertama) */
+    div ~ p {
+      font-style: italic;
+    }
+
+    /* .classname → semua elemen dengan class */
+    .highlight {
+      color: blue;
+    }
+
+    /* #idname → elemen dengan ID */
+    #unik {
+      background-color: lightgreen;
+    }
+
+    /* div.classname → div dengan class tertentu */
+    div.special {
+      border: 2px dashed purple;
+    }
+
+    /* div#idname → div dengan ID tertentu */
+    div#unikdiv {
+      background-color: pink;
+    }
+
+    /* #idname * → semua elemen di dalam ID */
+    #container * {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Latihan CSS Selectors</h1>
+
+  <div>
+    <p>Paragraf 1 di dalam div (kena selector div p & div > p)</p>
+    <span><p>Paragraf 2 di dalam span di dalam div (kena div p saja)</p></span>
+  </div>
+
+  <p>Paragraf setelah div (kena div + p & div ~ p)</p>
+  <p>Paragraf kedua setelah div (kena div ~ p)</p>
+
+  <div class="special">Div dengan class <b>special</b></div>
+
+  <div id="unikdiv">Div dengan ID unikdiv</div>
+
+  <p class="highlight">Paragraf dengan class highlight</p>
+
+  <div id="unik">Div dengan ID "unik"</div>
+
+  <div id="container">
+    <p>Paragraf di dalam container (kena #container *)</p>
+    <span>Span di dalam container (kena #container *)</span>
+  </div>
+</body>
+</html>

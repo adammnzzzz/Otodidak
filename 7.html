@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Position</title>
+  <style>
+    body {
+      height: 20000px; /* supaya bisa di-scroll */
+      font-family: Arial;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      margin: 20px;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* 1. Static */
+    .static {
+      background: gray;
+      position: static; /* default, elemen mengikuti alur normal */
+    }
+
+    /* 2. Relative */
+    .relative {
+      background: blue;
+      position: relative;
+      top: 0px;  /* bergeser dari posisi aslinya */
+      left: 30px;
+    }
+
+    /* 3. Absolute */
+    .absolute {
+      background: red;
+      position: absolute;
+      top: 100px;  /* dihitung dari body (karena parent tidak ada position selain static) */
+      left: 200px;
+    }
+
+    /* 4. Fixed */
+    .fixed {
+      background: green;
+      position: fixed;
+      bottom: 20px; /* selalu nempel di bawah layar */
+      right: 20px;
+    }
+
+    /* 5. Sticky */
+    .sticky {
+      background: purple;
+      position: sticky;
+      top: 0; /* dia akan “lengket” di atas saat discroll */
+    }
+
+    /* Buat pembatas biar sticky bisa kelihatan efeknya */
+    .spacer {
+      height: 300px;
+      background: #f1f1f1;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+  <div class="box absolute">Absolute</div>
+  <div class="box fixed">Fixed</div>
+  
+  <div class="spacer">Scroll ke bawah untuk lihat efek Sticky</div>
+  <div class="box sticky">Sticky</div>
+  <div class="spacer"></div>
+
+  <div style="position: sticky; top: 130px; text-indent: 20px;"> Real Madrid adalah klub sepak bola profesional yang berbasis di Madrid, Spanyol. Klub ini didirikan pada tahun 1902 dan telah menjadi salah satu klub paling sukses dan terkenal di dunia. Real Madrid telah memenangkan banyak gelar domestik dan internasional, termasuk La Liga, Copa del Rey, Liga Champions UEFA, dan Piala Dunia Antarklub FIFA. Klub ini dikenal dengan julukan "Los Blancos" (The Whites) karena seragam putih khas mereka. Real Madrid juga memiliki basis penggemar yang besar di seluruh dunia dan telah menjadi rumah bagi beberapa pemain sepak bola terbaik sepanjang sejarah, seperti Alfredo Di Stéfano, Cristiano Ronaldo, dan Zinedine Zidane.
+
+  </div>
+</body>
+</html>

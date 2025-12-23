@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Courier New", Courier, monospace;
+        box-sizing: border-box;
+      }
+
+      .header {
+        background-color: antiquewhite;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        height: 100px;
+        z-index: 2;
+      }
+
+      .header h1 {
+        margin-left: 50px;
+      }
+
+      .container {
+        z-index: 1;
+        position: relative;
+        top: 100px;
+        max-width: 700px;
+        margin: 0px auto 0px auto;
+      }
+
+      .container h2 {
+        font-size: 18px;
+      }
+
+      .kolom-konten{
+        width: 500px;
+        float: left;
+      }
+      .kolom-menu {
+        background-color: aqua;
+        width: 190px;
+        padding: 10px;
+        float: left;
+        margin-left: 10px;
+      }
+
+      .kolom-menu ul {
+        list-style-type: none;
+      }
+
+      .kolom-menu ul li a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Website Gua cak</h1>
+    </div>
+
+    <div class="container">
+      <div class="kolom-konten">
+        <h2 id="artikel-1">Bambang Persija</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          praesentium a eos? Maxime ex voluptatum aliquam ducimus beatae quae
+          perferendis dignissimos unde quas. Quis voluptatem sed vel aut omnis
+          quibusdam. Repudiandae impedit eligendi nisi voluptatibus, doloribus
+          quisquam enim iusto nemo quae commodi atque, labore, nulla veniam unde
+          distinctio natus deserunt corrupti quasi sunt dolor. Officiis
+          recusandae officia tenetur molestias beatae. Velit libero veritatis
+          facere quo quam distinctio blanditiis impedit tenetur in sequi
+          recusandae, ullam delectus odio architecto, provident sit, mollitia
+          amet dolor suscipit dolorum non ratione? Blanditiis similique aliquid
+          delectus! Numquam, dolorum! Itaque delectus tempora rem rerum earum
+          quas mollitia assumenda vero quo commodi! Odit, sint perspiciatis
+          doloremque eaque a, repudiandae, blanditiis corporis soluta ut
+          suscipit earum iste nam impedit. Necessitatibus doloremque, ipsam,
+          itaque minima nihil consectetur, nesciunt repellendus suscipit eveniet
+          doloribus ab. Veniam pariatur debitis asperiores aliquid reiciendis
+          incidunt expedita necessitatibus nisi quaerat architecto, alias rem
+          nam corrupti. Illum?
+        </p>
+        <h2 id="artikel-2">Persija Jakarta Raih juara Liga 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          praesentium a eos? Maxime ex voluptatum aliquam ducimus beatae quae
+          perferendis dignissimos unde quas. Quis voluptatem sed vel aut omnis
+          quibusdam. Repudiandae impedit eligendi nisi voluptatibus, doloribus
+          quisquam enim iusto nemo quae commodi atque, labore, nulla veniam unde
+          distinctio natus deserunt corrupti quasi sunt dolor. Officiis
+          recusandae officia tenetur molestias beatae. Velit libero veritatis
+          facere quo quam distinctio blanditiis impedit tenetur in sequi
+          recusandae, ullam delectus odio architecto, provident sit, mollitia
+          amet dolor suscipit dolorum non ratione? Blanditiis similique aliquid
+          delectus! Numquam, dolorum! Itaque delectus tempora rem rerum earum
+          quas mollitia assumenda vero quo commodi! Odit, sint perspiciatis
+          doloremque eaque a, repudiandae, blanditiis corporis soluta ut
+          suscipit earum iste nam impedit. Necessitatibus doloremque, ipsam,
+          itaque minima nihil consectetur, nesciunt repellendus suscipit eveniet
+          doloribus ab. Veniam pariatur debitis asperiores aliquid reiciendis
+          incidunt expedita necessitatibus nisi quaerat architecto, alias rem
+          nam corrupti. Illum?
+        </p>
+        <h2 id="artikel-3">Real Madrid Reyes de mundo</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          praesentium a eos? Maxime ex voluptatum aliquam ducimus beatae quae
+          perferendis dignissimos unde quas. Quis voluptatem sed vel aut omnis
+          quibusdam. Repudiandae impedit eligendi nisi voluptatibus, doloribus
+          quisquam enim iusto nemo quae commodi atque, labore, nulla veniam unde
+          distinctio natus deserunt corrupti quasi sunt dolor. Officiis
+          recusandae officia tenetur molestias beatae. Velit libero veritatis
+          facere quo quam distinctio blanditiis impedit tenetur in sequi
+          recusandae, ullam delectus odio architecto, provident sit, mollitia
+          amet dolor suscipit dolorum non ratione? Blanditiis similique aliquid
+          delectus! Numquam, dolorum! Itaque delectus tempora rem rerum earum
+          quas mollitia assumenda vero quo commodi! Odit, sint perspiciatis
+          doloremque eaque a, repudiandae, blanditiis corporis soluta ut
+          suscipit earum iste nam impedit. Necessitatibus doloremque, ipsam,
+          itaque minima nihil consectetur, nesciunt repellendus suscipit eveniet
+          doloribus ab. Veniam pariatur debitis asperiores aliquid reiciendis
+          incidunt expedita necessitatibus nisi quaerat architecto, alias rem
+          nam corrupti. Illum?
+        </p>
+      </div>
+
+      <div class="kolom-menu">
+        <ul>
+          <li><a href="#artikel-1">Bambang Persija</a></li>
+          <li><a href="#artikel-2">Persija Jakarta Raih juara Liga 1</a></li>
+          <li><a href="#artikel-3">Real Madrid Reyes de mundo</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

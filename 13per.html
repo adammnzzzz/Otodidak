@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Layout Float</title>
+    <style>
+      /* ====== Reset & dasar ====== */
+      body {
+        max-width: 960px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1, h2, h3, p {
+        margin: 0 0 10px;
+      }
+
+      /* ====== Header ====15== */
+      #header {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border-bottom: 2px solid #ddd;
+      }
+
+      /* ====== Navigasi ====== */
+      #nav {
+        background-color: #efefef;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      #nav li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      #nav a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      /* ====== Highlight section ====== */
+      #highlight {
+        background-color: #efefef;
+        padding: 15px;
+        margin: 15px 0;
+        text-align: center;
+      }
+
+      #highlight img {
+        width: 250px;
+        display: block;
+        margin: 10px auto;
+      }
+
+      /* ====== Artikel (3 kolom) ====== */
+      #content {
+        overflow:  auto; /* biar float tidak rusak */
+      }
+
+      .article {
+        float: left;
+        width: 30%;
+        margin: 1.5%;
+        background-color: #efefef;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      /* ====== Footer ====== */
+      #footer {
+        text-align: center;
+        background-color: #efefef;
+        padding: 15px;
+        margin-top: 15px;
+        border-top: 2px solid #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header">
+      <h1>Belajar Layout Float</h1>
+    </div>
+
+    <!-- NAVIGASI -->
+    <div id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HIGHLIGHT -->
+    <div id="highlight">
+      <h2>Bagian Highlight</h2>
+      <img src="https://via.placeholder.com/250x150" alt="contoh gambar" />
+      <p>
+        Ini adalah bagian highlight, biasanya untuk menampilkan gambar utama atau berita penting.
+      </p>
+    </div>
+
+    <!-- KONTEN UTAMA -->
+    <div id="content">
+      <div class="article">
+        <h3>Kolom 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          veniam. Aspernatur amet, perspiciatis distinctio.
+        </p>
+      </div>
+
+      <div class="article">
+        <h3>Kolom 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          veniam. Aspernatur amet, perspiciatis distinctio.
+        </p>
+      </div>
+
+      <div class="article">
+        <h3>Kolom 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          veniam. Aspernatur amet, perspiciatis distinctio.
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <p>&copy; 2025 Belajar Layout. All rights reserved.</p>
+    </div>
+  </body>
+</html>

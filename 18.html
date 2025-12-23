@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header ul.navbar {
+        display: flex;
+        align-items: center;
+        background-color: rgb(196, 196, 196);
+        padding: 10px 20px;
+        position: fixed;
+        top: 20px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      header ul.navbar li {
+        list-style-type: none;
+        margin-right: 20px;
+      }
+
+      header ul.navbar li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      /* Ini bagian penting: geser item ke kanan mulai dari elemen ke-2 */
+      header ul.navbar li:nth-child(2) {
+        margin-left: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <ul class="navbar">
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Verifikasi Produk</a></li>
+        <li><a href="">Lacak Pesanan</a></li>
+      </ul>
+    </header>
+  </body>
+</html>

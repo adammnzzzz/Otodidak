@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Margin vs Position Demo</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 100px;
+      background-color: lightblue;
+      border: 2px solid blue;
+    }
+
+    /* 1. Box pakai margin */
+    .margin-box {
+      margin-left: 0px; /* geser kotak dari luar */
+      padding-left: 10px;
+    }
+
+    /* 2. Box pakai relative + top/left */
+    .relative-box {
+      position: relative;
+      top: 30px;   /* geser ke bawah */
+      left: 0px;  /* geser ke kanan */
+      background-color: lightgreen;
+    }
+
+    /* 3. Box pakai absolute */
+    .absolute-box {
+      position: absolute;
+      top: 50px;   /* posisinya dihitung dari sudut kiri atas body */
+      left: 250px;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <h2>Margin vs Position</h2>
+
+  <div class="box margin-box">Margin Box</div>
+  <div class="box relative-box">Relative Box</div>

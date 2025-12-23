@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        height: 1000vh;
+      }
+      .static {
+        position: static;
+        background-color: lightyellow;
+      }
+      .relative {
+        position: relative;
+        background-color: lightblue;
+        top: 20px;
+        left: 20px;
+      }
+      .absolute {
+        position: absolute;
+        background-color: lightgreen;
+        top: 0px;
+        left: 0px;
+      }
+      .wrapper {
+        position: relative;
+        height: 200px;
+        border: 2px dashed red;
+        margin-top: 30px;
+      }
+
+      .absolute {
+        position: absolute;
+        background-color: lightgreen;
+        top: 0;
+        right: 0;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static">
+      <h1>Static Positioning</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+        nemo voluptates sed amet. Qui exercitationem laudantium animi hic sequi
+        accusantium rerum maiores autem, magnam laborum velit non officiis id
+        omnis?
+      </p>
+    </div>
+    <div class="relative">
+      <h1>Relative</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+        nemo voluptates sed amet. Qui exercitationem laudantium animi hic sequi
+        accusantium rerum maiores autem, magnam laborum velit non officiis id
+        omnis?
+      </p>
+    </div>
+    <div class="wrapper">
+      <div class="absolute">
+        <h1>Absolute</h1>
+        <p>Ini kotak absolute di dalam wrapper relative.</p>
+      </div>
+    </div>
+  </body>
+</html>

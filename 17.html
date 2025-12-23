@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo margin-left auto</title>
+  <style>
+    /* gaya dasar */
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+    }
+
+    /* parent-nya: flex container */
+    .navbar {
+      display: flex;
+      background-color: rgb(220, 220, 220);
+      padding: 10px;
+    }
+
+    /* gaya untuk setiap item */
+    .navbar li {
+      list-style: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* warna berbeda biar kelihatan */
+    .navbar li:nth-child(1) { background-color: tomato; }
+    .navbar li:nth-child(2) { background-color: royalblue; }
+    .navbar li:nth-child(3) { background-color: seagreen; }
+
+    /* inilah kuncinya */
+    .navbar li:nth-child(2) {
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="navbar">
+    <li>FAQ</li>
+    <li>Verifikasi Produk</li>
+    <li>Lacak Pesanan</li>
+  </ul>
+
+</body>
+</html>
